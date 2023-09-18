@@ -1,0 +1,7 @@
+{
+    "ui": [{
+        "cli": [{
+            "cmdArgs": [":PunyJS.ui.cl.args._CmdArgs", []]
+        }]
+    }]
+}

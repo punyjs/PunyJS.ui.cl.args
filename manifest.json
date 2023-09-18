@@ -1,0 +1,37 @@
+{
+    "name": "punyjs-cl"
+
+    , "config": {
+        "strict": true
+        , "output": "PunyJS/ui/cl/args/"
+    }
+
+    , "appFileName": "${name}.js"
+    , "iocNamePrefix": "ioc-controller"
+    , "iocType": "monolith"
+    , "appType": "ioc.${iocType}"
+
+    , "entries": [
+        {
+            "type": "ioc.monolith"
+            , "dtree": "dtree.json"
+            , "config": {
+                "dtreeFileName": "dtree.js"
+                , "fileName": "index.js"
+                , "engine": "browser"
+            }
+        }
+        , {
+            "type": "test"
+            , "units": {
+                "controller": 3
+                , "app": 0
+            }
+            , "config": {
+                "fileName": "test.json"
+            }
+        }
+        , "{PunyJS.ioc.manifests}/base.manifest.json"
+        , "{PunyJS.ioc.manifests}/browser.manifest.json"
+    ]
+}
